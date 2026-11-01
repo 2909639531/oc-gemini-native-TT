@@ -1,8 +1,8 @@
 {
     "display_name": "OC Gemini Native (TT)",
-    "version": "2.0.2",
+    "version": "3.0.0",
     "author": "local",
-    "description": "TauriTavern only. Forces every generation through the Gemini generateContent protocol on OpenCode Go, injecting x-opencode-session. No API key is bundled: enter your own key in the panel. Does not touch your other API settings until you pick this source.",
+    "description": "TauriTavern only. Forces OpenCode Go's Gemini 4 Argon onto the native generateContent protocol, and only for requests that already target the custom channel. Never rewrites your native sources (Google AI Studio / OpenAI / Claude), never persists its own headers or API key, auto-repairs residue left by v1/v2, and can be fully reverted in one click.",
     "loading_order": 95,
     "requires": [],
     "optional": [],

@@ -12,6 +12,13 @@
     color: var(--SmartThemeEmColor);
 }
 
+.ocg-version {
+    font-weight: normal;
+    font-size: 0.75em;
+    opacity: 0.55;
+    margin-left: 4px;
+}
+
 .ocg-panel label {
     display: block;
     font-size: 0.9em;
@@ -47,13 +54,27 @@
     flex: 0 0 auto;
 }
 
-.ocg-actions .checkbox_label {
+/* 「彻底清理」是破坏性操作，视觉上要和普通按钮分开 */
+.ocg-actions .ocg-danger {
+    border-color: #c0392b;
+    color: #c0392b;
+}
+
+.ocg-advanced {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--SmartThemeBorderColor);
+}
+
+.ocg-actions .checkbox_label,
+.ocg-advanced .checkbox_label {
     display: flex;
-    align-items: center;
-    gap: 4px;
-    margin: 0;
-    font-size: 0.85em;
-    opacity: 0.85;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 4px 0;
+    font-size: 0.8em;
+    opacity: 0.75;
+    line-height: 1.35;
 }
 
 .ocg-hint {
